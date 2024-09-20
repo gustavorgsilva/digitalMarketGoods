@@ -12,6 +12,7 @@
 
     <!-- Fonts -->
 
+
     <!-- CSS Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -39,7 +40,7 @@
     />
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header id="header" class="header">
@@ -59,16 +60,41 @@
         </div>
         <!-- Fim Topbar -->
       </div>
-      <!-- Fim Container -->
+      <div class="branding d-flex align-items-center">
+        <div class="container position-relative d-flex align-items-center justify-content-end">
+            <a href="" class="logo d-flex align-items-center me-auto"> <!-- Cria link  -->
+                <img src="assets/img/logo.png" alt="">
+            </a>
 
-        <div class="branding d-flex align-items-center">
-            <div class="container position-relative d-flex align-items-center justify-content-end">
-                <a href="" class="logo d-flex align-items-center me-auto"> <!-- Cria link  -->
-                    <img src="assets/img/logo.png" alt="">
-                </a>
-            </div>
-        </div> 
-        <!-- Fim Branding -->
+            <!-- Menu -->
+             <nav>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Mais Opções</a>
+                
+                  <ul>
+                    <li>Opção 1</li>
+                    <li>Opção 2</li>
+                    <li> Submenu
+                  <ul>
+                    <li>Submenu 1</li>
+                    <li>Submenu 2</li>
+                  </ul>
+                    </li> <!-- Fim Submenu -->
+                  </ul>
+                    </li> <!-- Fim Mais Opções -->
+              </ul>      
+
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+             </nav><!-- Fim Navi -->
+          <a href="" class="cta-btn">
+            Agende uma Consulta (Teste)
+          </a>   
+        </div><!-- Fim Container -->
+    </div> <!-- Fim Branding -->
     </header>
     <!-- Fim Header -->
 
