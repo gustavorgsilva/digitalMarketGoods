@@ -67,24 +67,30 @@
             </a>
 
             <!-- Menu -->
-             <nav>
+             <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">Mais Opções</a>
-                
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li class="dropdown">
+                 <a href="#opcoes"><span>Mais Opções</span>
+                  <i class="bi bi-chevron-down"></i>
+                 </a>
                   <ul>
-                    <li>Opção 1</li>
-                    <li>Opção 2</li>
-                    <li> Submenu
-                  <ul>
-                    <li>Submenu 1</li>
-                    <li>Submenu 2</li>
-                  </ul>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li class="dropdown">
+                    <a href="#"><span>Submenu</span>
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                       <ul>
+                          <li><a href="#">Sub menu 1</a></li>
+                          <li><a href="#">Sub menu 2</a></li>
+                       </ul>
                     </li> <!-- Fim Submenu -->
                   </ul>
-                    </li> <!-- Fim Mais Opções -->
+                </li> <!-- Fim Mais Opções -->
               </ul>      
 
               <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
