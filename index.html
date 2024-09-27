@@ -1,135 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Market Goods 💊</title>
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!-- Favicons -->
-    <link rel="icon" href="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Market Goods 💊</title>
 
-    <!-- Fonts -->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- Favicons -->
+  <link rel="icon" href="" />
+
+  <!-- Fonts -->
 
 
-    <!-- CSS Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet" />
 
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header id="header" class="header">
-      <div class="topbar d-flex align-items-center">
-        <div
-          class="container d-flex justify-content-center justify-content-md-between"
-        >
-          <div class="d-none d-md-flex align-items-center">
-            <i class="bi bi-clock"></i>
-            Segunda a Sexta, das 08h às 17h
-          </div>
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-          <div class="d-flex align-items-center">
-            <i class="bi bi-telephone"></i>
-            (11) 91611-8884
-          </div>
+<body>
+  <header id="header" class="header">
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="d-none d-md-flex align-items-center">
+          <i class="bi bi-clock"></i>
+          Segunda a Sexta, das 08h às 17h
         </div>
-        <!-- Fim Topbar -->
+
+        <div class="d-flex align-items-center">
+          <i class="bi bi-telephone"></i>
+          (11) 91611-8884
+        </div>
       </div>
-      <div class="branding d-flex align-items-center">
-        <div class="container position-relative d-flex align-items-center justify-content-end">
-            <a href="" class="logo d-flex align-items-center me-auto"> <!-- Cria link  -->
-                <img src="assets/img/logo.png" alt="">
-            </a>
+      <!-- Fim Topbar -->
+    </div>
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-end">
+        <a href="" class="logo d-flex align-items-center me-auto"> <!-- Cria link  -->
+          <img src="assets/img/logo.png" alt="">
+        </a>
 
-            <!-- Menu -->
-             <nav id="navmenu" class="navmenu">
+        <!-- Menu -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li class="dropdown">
+              <a href="#opcoes"><span>Mais Opções</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
               <ul>
-                <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
                 <li class="dropdown">
-                 <a href="#opcoes"><span>Mais Opções</span>
-                  <i class="bi bi-chevron-down"></i>
-                 </a>
+                  <a href="#"><span>Submenu</span>
+                    <i class="bi bi-chevron-down"></i>
+                  </a>
                   <ul>
-                    <li><a href="#">Opção 1</a></li>
-                    <li><a href="#">Opção 2</a></li>
-                    <li class="dropdown">
-                    <a href="#"><span>Submenu</span>
-                      <i class="bi bi-chevron-down"></i>
-                    </a>
-                       <ul>
-                          <li><a href="#">Sub menu 1</a></li>
-                          <li><a href="#">Sub menu 2</a></li>
-                       </ul>
-                    </li> <!-- Fim Submenu -->
+                    <li><a href="#">Sub menu 1</a></li>
+                    <li><a href="#">Sub menu 2</a></li>
                   </ul>
-                </li> <!-- Fim Mais Opções -->
-              </ul>      
+                </li> <!-- Fim Submenu -->
+              </ul>
+            </li> <!-- Fim Mais Opções -->
+          </ul>
 
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 
-             </nav><!-- Fim Navi -->
-          <a href="" class="cta-btn">
-            Agende uma Consulta (Teste)
-          </a>   
-        </div><!-- Fim Container -->
+        </nav><!-- Fim Navi -->
+        <a href="" class="cta-btn">
+          Agende uma Consulta (Teste)
+        </a>
+      </div><!-- Fim Container -->
     </div> <!-- Fim Branding -->
-    </header>
-    <!-- Fim Header -->
+  </header>
+  <!-- Fim Header -->
 
-    <main class="main">
-      <!-- HERO Section -->
-      <section id="hero" class="hero section">
+  <main class="main">
+    <!-- HERO Section -->
+    <section id="hero" class="hero section">
 
-        <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-          <!-- Foto 1 / Slide 1 -->
-          <div class="carousel-item active">
-            <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="medico">
-             <div class="container">
-              <h2>Bem vindo à Digital Market Goods</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dignissimos tempore qui repudiandae illo assumenda quisquam minima eius illum odio maiores, aut incidunt possimus voluptates velit quod commodi repellendus error.</p>
-            </div>
-          </div> <!-- Fim slide 1 -->
-        </div> <!-- Fim Hero Carousel -->
+        <!-- Foto 1 / Slide 1 -->
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="medico">
+          <div class="container">
+            <h2>Bem vindo à Digital Market Goods</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dignissimos tempore qui repudiandae illo
+              assumenda quisquam minima eius illum odio maiores, aut incidunt possimus voluptates velit quod commodi
+              repellendus error.</p>
+          </div>
+        </div> <!-- Fim slide 1 -->
+        <!-- Foto 2 / Slide 2 -->
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="medico">
+          <div class="container">
+            <h2>Bem vindo à Digital Market Goods</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dignissimos tempore qui repudiandae illo
+              assumenda quisquam minima eius illum odio maiores, aut incidunt possimus voluptates velit quod commodi
+              repellendus error.</p>
+          </div>
+        </div> <!-- Fim slide 2 -->
 
-      </section>
+        <!-- Foto 3 / Slide 3 -->
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="medico">
+          <div class="container">
+            <h2>Bem vindo à Digital Market Goods</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dignissimos tempore qui repudiandae illo
+              assumenda quisquam minima eius illum odio maiores, aut incidunt possimus voluptates velit quod commodi
+              repellendus error.</p>
+          </div>
+        </div> <!-- Fim slide 3 -->
+
+        <!-- Control Prev -->
+        <a href="hero-carousel" 
+      class="carousel-control-prev"
+      role="button" data-bs-slide ="prev">
+       <i class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></i>
+      </a>
+
+        <!-- Control Next -->
+        <a href="hero-carousel" 
+      class="carousel-control-next"
+       role="button" data-bs-slide ="next">
+       <i class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></i>
+      </a>
+
+      <ol class="carousel-indicators"></ol>
+
+      </div> <!-- Fim Hero Carousel -- >
+
+    </section>
 
 
-    </main>
+  </main>
 
-    <footer>
-      <div>Digital Market Goods</div>
-    </footer>
-  
-    <script src="js/main.js"></script>
+  <footer>
+    <div>Digital Market Goods</div>
+  </footer>
 
-  </body>
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
