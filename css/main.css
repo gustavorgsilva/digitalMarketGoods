@@ -12,6 +12,7 @@
   --nav-bg-topbar: #3fbbc0;
   --nav-color2: #ebebeb;
   --slide-bg: white;
+  --accent-color: #3fbbc0;
 }
 
 body {
@@ -370,6 +371,12 @@ a {
   background: red;
 }
 
+@media (max-height: 500px), (max-width: 500px) {
+  .hero .carousel {
+    min-height: 100vh;
+  }
+}
+
 /* =================================
            FEATURE SERVICES
    ================================= */
@@ -437,7 +444,7 @@ a {
 
   .section, 
    section{
-    color: ;
+    /* color: ; */
     background-color: #fff;
     padding: 60px 0;
   }
@@ -447,6 +454,11 @@ a {
   .section {
     scroll-margin-top: 10px;
   }
+}
+
+.accent-background{
+  background: #3fbbc0;
+  color: #e0e0e0;
 }
 
 /* ==================
@@ -484,8 +496,50 @@ a {
   margin-bottom: 0;
 }
 
-@media (max-height: 500px), (max-width: 500px) {
-  .hero .carousel {
-    min-height: 100vh;
-  }
+/* ======================
+           ABOUT
+   ====================== */
+
+.about .container h3{
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #3fbbc0;
 }
+
+.about .content ul{
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-top: 10;
+  display: flex;
+}
+
+.about .content ul i{
+  color: #00b0c4;
+  margin-right: 0.5rem;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+.about .pulsating-play-btn{
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+
+/* ================
+Pulsating Play Button 
+   ================*/
+
+  .pulsating-play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient( #3fbbc0 50%, color-mix(in srgb, #3fbbc0, transparent 75%) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
