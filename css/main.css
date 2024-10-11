@@ -1,11 +1,10 @@
 /* GOOGLE FONTS */
 
 :root{
-  --default-font:; /* fonte padrao */
-  --heading-font:; /* titulos */
-  --nav-font:;/* navegações - menu */
+  --defaut-font: "Roboto", serif; /* fonte padrao */
+  --heading-font: "Protest Strike", sans-serif;   /* titulos */
+  --nav-font: "Roboto", sans-serif;     /* navegações / Menu */
 }
-
 
 
 :root {
@@ -622,9 +621,9 @@ Pulsating Play Button
 
 /* STATUS */
 
-.stats .stats-item{
-  background: rgb(149, 141, 141);
-  box-shadow: 0, 0, 30px, rgba(0, 0, 0, 0.3);
+.stats .stats-item {
+  background-color: white;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
   padding: 30px;
 }
 
@@ -641,4 +640,39 @@ Pulsating Play Button
   font-size: 36px;
   display: block;
   font-weight: 600;
+}
+
+/* SCROLL TOP BUTTON */
+
+.scroll-top{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: whitesmoke;
+  line-height: 0;
+}
+
+.scroll-top.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-top:hover{
+ background: #b6e7e9;
+}
+
+.scroll-top:hover i{
+  color: #3fbbc0;
 }
