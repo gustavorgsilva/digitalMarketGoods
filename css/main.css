@@ -380,31 +380,6 @@ a {
   background: #01d2e9;
 }
 
-/* Responsivos */
-
-@media (max-height: 500px), (max-width: 500px) {
-  .hero .carousel {
-    min-height: 100vh;
-  }
-}
-
-@media (max-width: 768px){
-  .hero h2{
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 640px){
-  .hero h2{
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 640px){
-  .hero h2{
-    font-size: 30px;
-  }
-}
 /* =================================
            FEATURE SERVICES
    ================================= */
@@ -923,7 +898,7 @@ Pulsating Play Button
   bottom: 30px;
   right: 0;
   opacity: 0;
-  transition: ease-in-out;
+  transition: ease-in-out 0.3s;
   text-align: center;
 }
 
@@ -952,6 +927,24 @@ Pulsating Play Button
 .medicos .team-member:hover .social{
   opacity: 1;
   bottom: 15px;
+}
+
+.medicos .team-member .social i{
+  font-size: 18px;
+  line-height: 0;
+}
+
+.medicos .team-member .member-info h4{
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.medicos .team-member .member-info span{
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #01d2e9;
 }
 
 /*  FAQ  */
@@ -1020,4 +1013,65 @@ Pulsating Play Button
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: #01d2e9;
+}
+
+/* Contato */
+
+.contato .info-item{
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px 0 30px 0;
+}
+
+.contato .info-item i{
+  color: #0d8084;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 2px dotted #0d8084
+}
+
+.contato .info-item h3{
+  font-size: 20px;
+  color: #383838;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contato .info-item p{
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+
+/* Responsivos */
+
+@media (max-height: 500px), (max-width: 500px) {
+  .hero .carousel {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 768px){
+  .hero h2{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 640px){
+  .hero h2{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 640px){
+  .hero h2{
+    font-size: 30px;
+  }
 }
